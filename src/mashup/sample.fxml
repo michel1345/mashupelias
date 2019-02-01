@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="100" vgap="100" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mashup.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="545.0" prefWidth="818.0">
+            <children>
+                <TextField fx:id="latitude" layoutX="232.0" layoutY="152.0" prefHeight="30.0" prefWidth="161.0" />
+                <TextField fx:id="longitude" layoutX="232.0" layoutY="122.0" prefHeight="30.0" prefWidth="161.0" />
+                <TextField fx:id="altitude" layoutX="232.0" layoutY="93.0" prefHeight="30.0" prefWidth="161.0" />
+                <TextField fx:id="direction" layoutX="232.0" layoutY="182.0" prefHeight="30.0" prefWidth="161.0" />
+                <Button layoutX="515.0" layoutY="431.0" mnemonicParsing="false" onAction="#getFlightData" prefHeight="77.0" prefWidth="183.0" text="Update" />
+
+                <Label layoutX="64.0" layoutY="88.0" prefHeight="37.0" prefWidth="139.0" text="Altitude">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="64.0" layoutY="118.0" prefHeight="37.0" prefWidth="139.0" text="Longitude">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="64.0" layoutY="148.0" prefHeight="37.0" prefWidth="130.0" text="Latitude">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="64.0" layoutY="178.0" prefHeight="37.0" prefWidth="139.0" text="Direction:">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="299.0" prefHeight="53.0" prefWidth="283.0" text="Flight Infos" textAlignment="CENTER" textFill="#da3a3a">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            <Label layoutX="64.0" layoutY="53.0" prefHeight="37.0" prefWidth="168.0" text="Geography">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="53.0" prefHeight="37.0" prefWidth="168.0" text="Speed">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="88.0" prefHeight="37.0" prefWidth="139.0" text="Horizontal">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="118.0" prefHeight="37.0" prefWidth="139.0" text="isGround">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="148.0" prefHeight="37.0" prefWidth="139.0" text="Vertical">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="606.0" layoutY="93.0" prefHeight="30.0" prefWidth="161.0" fx:id="horizontal"/>
+            <TextField layoutX="606.0" layoutY="122.0" prefHeight="30.0" prefWidth="161.0" fx:id="isGround"/>
+            <TextField layoutX="606.0" layoutY="152.0" prefHeight="30.0" prefWidth="161.0" fx:id="vertical"/>
+            <Label layoutX="64.0" layoutY="267.0" prefHeight="37.0" prefWidth="168.0" text="Aircraft">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="304.0" prefHeight="37.0" prefWidth="139.0" text="regNumber">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="334.0" prefHeight="37.0" prefWidth="139.0" text="Typ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="364.0" prefHeight="37.0" prefWidth="139.0" text="icao24">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="394.0" prefHeight="37.0" prefWidth="139.0" text="iataCode">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="232.0" layoutY="309.0" prefHeight="30.0" prefWidth="161.0" fx:id="regNumber" />
+            <TextField layoutX="232.0" layoutY="339.0" prefHeight="30.0" prefWidth="161.0" fx:id="icaoCode"/>
+            <TextField layoutX="232.0" layoutY="369.0" prefHeight="30.0" prefWidth="161.0" fx:id="icao24"/>
+            <TextField layoutX="232.0" layoutY="399.0" prefHeight="30.0" prefWidth="161.0" fx:id="iataCode"/>
+            <Label layoutX="463.0" layoutY="267.0" prefHeight="37.0" prefWidth="168.0" text="Flight">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="304.0" prefHeight="37.0" prefWidth="139.0" text="iataNumber">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="334.0" prefHeight="37.0" prefWidth="139.0" text="icaoNumber">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="364.0" prefHeight="37.0" prefWidth="139.0" text="FlightNumber">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="606.0" layoutY="309.0" prefHeight="30.0" prefWidth="161.0" fx:id="iataNumber"/>
+            <TextField layoutX="606.0" layoutY="339.0" prefHeight="30.0" prefWidth="161.0" fx:id="icaoNumber"/>
+            <TextField layoutX="606.0" layoutY="369.0" prefHeight="30.0" prefWidth="161.0" fx:id="number"/>
+
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
